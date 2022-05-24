@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'my-store';
+  imgParent = '';
+
+  onLoaded(img: string) {
+    console.log('log padre', img);
+  }
 }
