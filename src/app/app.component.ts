@@ -46,7 +46,11 @@ export class AppComponent {
   ];
 
   imgParent = '';
+  showImg = true;
   onLoaded(img: string) {
     console.log('log padre', img);
+  }
+  toggleImg() {
+    this.showImg = !this.showImg;
   }
 }
